@@ -1,7 +1,9 @@
 {
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:ui": "rm -rf dist && cd '../../../Tasks/part 2/the-phonebook' && npm run build && cp -r dist ../test_1",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
     "express": "^4.18.2",

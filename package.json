@@ -2,10 +2,11 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf dist && cd '../../../Tasks/part 2/the-phonebook' && npm run build && cp -r dist ../../../'New folder/part 3 stuffs/phonebook-backend'",
+    "build:ui": "rm -rf dist && cd ../the-phonebook && npm run build && cp -r dist ../phonebook-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "morgan": "^1.10.0"
   },

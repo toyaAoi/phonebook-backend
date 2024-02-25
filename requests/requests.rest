@@ -1,8 +1,16 @@
-DELETE http://localhost:3001/api/persons/20
+DELETE http://localhost:3001/api/persons/65d9f71ddec1b38dc92b8154
 
 ###
 
 GET http://localhost:3001/info
+
+###
+
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/api/persons/65d9f71ddec1b38dc92b8154
 
 ###
 
@@ -11,5 +19,5 @@ Content-Type: application/json
 
 {
   "name": "Toya Aoi",
-  "number": "771-852-4116"
+  "number": "771-8524116"
 }
